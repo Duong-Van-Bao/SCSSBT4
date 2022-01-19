@@ -1,0 +1,59 @@
+$mh:#c69;
+$co1: 13px;
+$co2: 28px;
+$co3: 48px;
+$fontchu: "seoge ui light";
+@mixin anhcantrai() {
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+}
+
+@mixin anhcantrai2($mphai) {
+    float: left;
+    width: 100px;
+    margin-right: $mphai;
+}
+
+@mixin anhcantrai3($rong, $mphai) {
+    float: left;
+    width: $rong;
+    margin-right: $mphai;
+}
+
+.jumbotron {
+    width: 900px;
+    margin: auto;
+    background: #699;
+    img {
+        @include anhcantrai3(150px, 15px);
+    }
+    h1 {
+        text-align: center;
+        color: $mh;
+        &:hover {
+            color: black;
+        }
+        &:after {
+            content: "Code nay them boi css";
+        }
+        &:before {
+            content: "hello";
+        }
+    }
+    p {
+        color: #414141;
+        font: {
+            family: $fontchu;
+            size: $co1;
+            width: bold;
+            style: italic
+        }
+    }
+}
+
+.khac {
+    img {
+        @include anhcantrai3(200px, 10px);
+    }
+}

@@ -1,0 +1,30 @@
+.jumbotron {
+  width: 900px;
+  margin: auto;
+  background: #699; }
+  .jumbotron img {
+    float: left;
+    width: 150px;
+    margin-right: 15px; }
+  .jumbotron h1 {
+    text-align: center;
+    color: #c69; }
+    .jumbotron h1:hover {
+      color: black; }
+    .jumbotron h1:after {
+      content: "Code nay them boi css"; }
+    .jumbotron h1:before {
+      content: "hello"; }
+  .jumbotron p {
+    color: #414141;
+    font-family: "seoge ui light";
+    font-size: 13px;
+    font-width: bold;
+    font-style: italic; }
+
+.khac img {
+  float: left;
+  width: 200px;
+  margin-right: 10px; }
+
+/*# sourceMappingURL=1.css.map */
